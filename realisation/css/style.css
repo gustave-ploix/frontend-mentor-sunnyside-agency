@@ -1,0 +1,468 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #3EBFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #left {
+  margin-left: 50px;
+}
+
+nav #left h1 {
+  font-size: 2.1em;
+  font-family: "General Sans", sans-serif;
+  color: white;
+}
+
+nav #right {
+  margin-right: 50px;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #right .navlinks {
+  font-family: "General Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: white;
+}
+
+nav #right #CTA {
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Zodiak", serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav #right #CTA:hover {
+  background-color: #8bd8ff;
+  color: white;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/image-header.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .header-text-and-arrow {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-text-and-arrow h2 {
+  font-family: "Zodiak", serif;
+  color: white;
+  font-size: 3em;
+}
+
+#image-section {
+  position: relative;
+  bottom: 50px;
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#image-section .card {
+  background-color: white;
+  width: 50%;
+  height: 75vh;
+  position: relative;
+}
+
+#image-section .card.text-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#image-section .card.text-card .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  height: 40%;
+}
+
+#image-section .card.text-card .text h2 {
+  font-family: "Zodiak", serif;
+  font-size: 3em;
+}
+
+#image-section .card.text-card .text p {
+  font-family: "General Sans", sans-serif;
+  font-size: 1.2em;
+}
+
+#image-section .card.text-card .text p a {
+  color: black;
+  display: inline;
+  position: absolute;
+}
+
+#image-section .card.text-card .text p a.first-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FDD302;
+  border-radius: 50px;
+}
+
+#image-section .card.text-card .text p a.first-link:hover::after {
+  height: 5px;
+  position: relative;
+  bottom: 5px;
+}
+
+#image-section .card.text-card .text p a.second-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FE7A6B;
+  border-radius: 50px;
+}
+
+#image-section .card.text-card .text p a.second-link:hover::after {
+  height: 5px;
+  position: relative;
+  bottom: 5px;
+}
+
+#image-section .card.image-card:nth-child(2) {
+  background-image: url("../images/image-transform.jpg");
+  background-size: 100% 100%;
+}
+
+#image-section .card.image-card:nth-child(3) {
+  background-image: url("../images/image-stand-out.jpg");
+  background-size: 100% 100%;
+}
+
+#image-section .card.image-and-text-card {
+  background-size: 100% 100%;
+}
+
+#image-section .card.image-and-text-card:nth-child(5) {
+  background-image: url("../images/image-graphic-design.jpg");
+}
+
+#image-section .card.image-and-text-card:nth-child(6) {
+  background-image: url("../images/image-photography.jpg");
+}
+
+#image-section .card.image-and-text-card .text-image {
+  width: 50%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#image-section .card.image-and-text-card .text-image h3 {
+  font-family: "Zodiak", serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+#image-section .card.image-and-text-card .text-image p {
+  font-family: "General Sans", sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#testimonials {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testimonials h3 {
+  font-family: "Zodiak", serif;
+  font-size: 1.5em;
+  color: grey;
+  text-transform: uppercase;
+}
+
+#testimonials #row-testimonials {
+  width: 80%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#testimonials #row-testimonials .testimonial-card {
+  width: calc(100vw / 3);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+}
+
+#testimonials #row-testimonials .testimonial-card .testimonial-content {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#testimonials #row-testimonials .testimonial-card .testimonial-content .profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#testimonials #row-testimonials .testimonial-card .testimonial-content .text {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "General Sans", sans-serif;
+}
+
+#testimonials #row-testimonials .testimonial-card .testimonial-content .name-and-post .name {
+  text-align: center;
+  font-size: 1.4em;
+  font-family: "General Sans", sans-serif;
+}
+
+#testimonials #row-testimonials .testimonial-card .testimonial-content .name-and-post .post {
+  text-align: center;
+  font-size: 1.2em;
+  color: gray;
+  font-family: "General Sans", sans-serif;
+}
+
+#images {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+
+#images #row-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#images #row-images .image {
+  width: calc(100vw / 4);
+  height: 100%;
+}
+
+#images #row-images .image:nth-child(1) {
+  background-image: url("../images/image-gallery-milkbottles.jpg");
+  background-size: 100% 100%;
+}
+
+#images #row-images .image:nth-child(2) {
+  background-image: url("../images/image-gallery-orange.jpg");
+  background-size: 100% 100%;
+}
+
+#images #row-images .image:nth-child(3) {
+  background-image: url("../images/image-gallery-cone.jpg");
+  background-size: 100% 100%;
+}
+
+#images #row-images .image:nth-child(4) {
+  background-image: url("../images/image-gallery-sugarcubes.jpg");
+  background-size: 100% 100%;
+}
+
+footer {
+  width: 100vw;
+  height: 40vh;
+  background-color: #95D3C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer h1 {
+  font-family: "General Sans", sans-serif;
+  color: #1f4a40;
+}
+
+footer #footer-links {
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer #footer-links p a {
+  font-family: "General Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  color: #1f4a40;
+}
+
+footer #footer-links p a:hover {
+  color: #ebe7e7;
+}
+
+footer #footer-socials-icons {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer #footer-socials-icons img {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
